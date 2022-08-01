@@ -92,6 +92,11 @@ a:hover{
     color: var(--color-white);
 }
 
+button{
+    border: none;
+    background-color: transparent;
+}
+
 .btn{
     width: max-content;
     display: inline-block;
