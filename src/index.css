@@ -86,10 +86,20 @@ section > h2{
 a{
     color: var(--color-primary);
     transition: var(--transition);
+    cursor: pointer;
 }
 
 a:hover{
     color: var(--color-white);
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .btn{
@@ -114,7 +124,7 @@ a:hover{
     color : var(--color-bg);
 }
 
-image{
+img{
     width: 100%;
     display: block;
     object-fit: cover;
