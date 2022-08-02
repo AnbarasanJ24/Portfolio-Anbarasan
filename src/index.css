@@ -86,6 +86,7 @@ section > h2{
 a{
     color: var(--color-primary);
     transition: var(--transition);
+    cursor: pointer;
 }
 
 a:hover{
@@ -95,6 +96,10 @@ a:hover{
 button{
     border: none;
     background-color: transparent;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .btn{
@@ -119,7 +124,7 @@ button{
     color : var(--color-bg);
 }
 
-image{
+img{
     width: 100%;
     display: block;
     object-fit: cover;
