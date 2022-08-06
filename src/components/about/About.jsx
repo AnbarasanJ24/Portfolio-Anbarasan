@@ -1,14 +1,13 @@
 import React from 'react'
 import './about.css';
-import profileAbout from '../../assets/me-about.jpg'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import profileAbout from '../../assets/me6.png'
+import { aboutMe } from '../../data/about-me';
+
 
 const About = () => {
   return (
     <section id='about'>
-      
+
       <h5>Get to know</h5>
       <h2>About Me</h2>
 
@@ -18,29 +17,27 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className='about-icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
-            <article className="about__card">
-              <FiUsers className='about-icon'/>
-              <h5>Clients</h5>
-              <small>100+ Worldwid</small>
-            </article>
-            <article className="about__card">
-              <VscFolderLibrary className='about-icon'/>
-              <h5>Project</h5>
-              <small>20+  Completed</small>
-            </article>
+            {
+              aboutMe.map(item => {
+                let {id, icon, title, description} = item;
+                return (
+                  <article className="about__card" key={id}>
+                    {icon }
+                    <h5>{title}</h5>
+                    <small>{ description}</small>
+                  </article>
+                )
+              })
+            }
           </div>
-          <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nisi quos iusto quas asperiores rerum consequatur 
-          aliquid. Modi quo saepe deserunt sint, delectus perspiciatis similique et ipsa alias ullam exercitationem?
-         </p>
-         <a href="/#contact" className='btn btn-primary'>Let's Talk</a>
+          {/* <ul className='about__description'>
+            <li>Proficient front-end engineer with 3 years of experience</li>
+            <li>Enhanced web performance & security using the relevant tech stack</li>
+            <li>Able to support backend and deployment team requirements with ease</li>
+          </ul> */}
+          <a href="/#contact" className='btn btn-primary m-2'>Let's Talk</a>
         </div>
-       
+
       </div>
     </section>
   )
