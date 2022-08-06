@@ -1,4 +1,5 @@
-import {BiHomeHeart,BiUser,BiBookmarkHeart,BiDialpadAlt,BiMessage} from 'react-icons/bi'
+import {BiHomeHeart,BiUser,BiBookmarkHeart,BiMessage} from 'react-icons/bi'
+import {AiOutlineDesktop} from 'react-icons/ai'
 export const navbar = [
     {
         id: 1,
@@ -17,16 +18,11 @@ export const navbar = [
     },
     {
         id: 4,
-        icon :  <BiDialpadAlt />,
-        value : '/#services'
-    },
-    {
-        id: 5,
-        icon : <BiHomeHeart />,
+        icon : <AiOutlineDesktop />,
         value : '/#portfolio'
     },
     {
-        id: 6,
+        id: 5,
         icon :  <BiMessage />,
         value : '/#contact'
     },

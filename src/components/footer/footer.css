@@ -46,6 +46,10 @@ footer a{
     color: var(--color-bg);
 }
 
+.footer__icons{
+    font-size: 1.2rem;
+}
+
 @media screen and (max-width: 600px) {
     .footer__links{
         flex-direction: column;

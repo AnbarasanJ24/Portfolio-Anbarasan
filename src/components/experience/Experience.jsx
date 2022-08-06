@@ -1,6 +1,6 @@
 import React from 'react'
 import './experience.css'
-import { BsPatchCheckFill } from 'react-icons/bs'
+import { frontendSkills ,familiarSkills, industryKnowledge } from '../../data/skills';
 
 const Experience = () => {
   return (
@@ -10,78 +10,66 @@ const Experience = () => {
 
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>Frontend Development</h3>
+          <h3>Frontend Stacks</h3>
           <div className="experience__content">
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>Javascript</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>CSS</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>React</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>Angular</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>Typescript</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
+            {
+              frontendSkills.map(skill => {
+                let { id, icon, name, experience } = skill
+
+                return (
+                  <article className='experience__details' key={id}>
+                    {icon}
+                    <div>
+                      <h4>{name}</h4>
+                      <small className='text-light'>{experience}</small>
+                    </div>
+                  </article>
+                )
+              })
+            }
           </div>
         </div>
 
 
-        <div className="experience__backend">
-          <h3>Backend Development</h3>
+        <div className="experience__others">
+          <h3>Familiar Stacks</h3>
           <div className="experience__content">
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>Node JS</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>Express JS</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>Mongo DB</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
+          {
+              familiarSkills.map(skill => {
+                let { id, icon, name, experience } = skill
+
+                return (
+                  <article className='experience__details' key={id}>
+                    {icon}
+                    <div>
+                      <h4>{name}</h4>
+                      <small className='text-light'>{experience}</small>
+                    </div>
+                  </article>
+                )
+              })
+            }
+          </div>
+        </div>
+
+        <div className="experience__others">
+          <h3>Industry Knowlege</h3>
+          <div className="experience__content">
+          {
+              industryKnowledge.map(skill => {
+                let { id, icon, name, experience } = skill
+
+                return (
+                  <article className='experience__details' key={id}>
+                    {icon}
+                    <div>
+                      <h4>{name}</h4>
+                      <small className='text-light'>{experience}</small>
+                    </div>
+                  </article>
+                )
+              })
+            }
           </div>
         </div>
       </div>
