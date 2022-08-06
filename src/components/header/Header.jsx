@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 import HeaderBtn from './HeaderBtn'
 import SocialLinks from './SocialLinks'
-import profile from '../../assets/me.png'
+import profile from '../../assets/me5.svg'
 
 const Header = () => {
   return (

@@ -1,5 +1,5 @@
 import { FaAward } from 'react-icons/fa'
-'
+
 
 export const aboutMe= [
     {
