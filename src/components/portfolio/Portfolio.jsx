@@ -11,7 +11,7 @@ const Portfolio = () => {
 
         {
           portfolioData.map(portfolio => {
-            let { id, image, title, tech, github,description, demo } = portfolio;
+            let { id, image, title, tech, github, description, demo } = portfolio;
 
             return (
               <article className="portfolio__item" key={id}>
@@ -19,13 +19,16 @@ const Portfolio = () => {
                   <img src={image} alt={title} />
                 </div>
                 <div>
-                <h3>{title}</h3>
-                <small>{tech}</small>
-                <p>{description}</p>
+                  <h3>{title}</h3>
+                  <small>{tech}</small>
+                  <p>{description}</p>
                 </div>
                 <div className="portfolio__item-btn">
                   <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+                  {
+                    demo !== '' &&
+                    <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+                  }
                 </div>
               </article>
             )
