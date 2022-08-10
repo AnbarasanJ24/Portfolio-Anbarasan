@@ -29,5 +29,5 @@ export const portfolioData = [
         github : 'https://github.com/AnbarasanJ24/Theatre-Movies-API-NodeJS',
         demo : '',
         description : 'Created a web service in Node JS, designed to showcase collection of theatre & movies'
-    },
+    }
 ]
