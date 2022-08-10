@@ -88,6 +88,10 @@ section >h5{
     color: var(--color-light);
 }
 
+.text-primary{
+    color: var(--color-primary);
+}
+
 a{
     color: var(--color-primary);
     transition: var(--transition);
