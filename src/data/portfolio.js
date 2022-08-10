@@ -18,7 +18,7 @@ export const portfolioData = [
         title : 'Reuseable React Components',
         tech : 'React JS',
         github : 'https://github.com/AnbarasanJ24/reuseable-react-projects',
-        demo : 'https://github.com/AnbarasanJ24/reuseable-react-projects',
+        demo : '',
         description : 'Created multiple reusebale components used in different react projects'
     },
     {
@@ -26,8 +26,8 @@ export const portfolioData = [
         image: movie,
         title : 'Movies API',
         tech : 'Node JS',
-        github : 'https://github.com',
-        demo : 'https://github.com',
+        github : 'https://github.com/AnbarasanJ24/Theatre-Movies-API-NodeJS',
+        demo : '',
         description : 'Created a web service in Node JS, designed to showcase collection of theatre & movies'
     },
 ]
