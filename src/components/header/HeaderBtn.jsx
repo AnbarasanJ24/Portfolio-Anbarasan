@@ -4,7 +4,8 @@ import resume from '../../assets/Anbarasan-Frontend-Engineer-3YOE.pdf'
 const HeaderBtn = () => {
   return (
     <div className='btn-container'>
-        <button><a href={resume} download className='btn'>Download Resume</a></button>
+        {/* Commented for some time */}
+        {/* <button><a href={resume} download className='btn'>Download Resume</a></button> */}
         <button><a href="/#contact" className='btn btn-primary'>Let's Talk</a></button>
     </div>
   )
