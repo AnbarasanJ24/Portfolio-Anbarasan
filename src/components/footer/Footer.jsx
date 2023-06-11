@@ -24,7 +24,7 @@ const Footer = () => {
               target='_blank' rel="noreferrer"><BsWhatsapp className='footer__icons'/></a>
       </div>
       <div className="footer__copyright">
-        <small> Handcrafted with Love! &copy; 2022</small>
+        <small> Handcrafted with Love! &copy; 2023</small>
       </div>
     </footer>
   )

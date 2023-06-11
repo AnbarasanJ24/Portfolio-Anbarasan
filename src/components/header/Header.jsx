@@ -9,8 +9,8 @@ const Header = () => {
     <header className='header__container'>
       <div className='container '>
         <h5>Hello I'm</h5>
-        <h1>Anbarasan</h1>
-        <h5>Software Engineer II - Frontend<span className='text-primary'> with 4 Years</span> of experience</h5>
+        <h1>Anbarasan Jayakumar</h1>
+        <h5>Software Engineer II <span className='text-primary'> with 5 Years</span> of experience</h5>
         <HeaderBtn />
         <SocialLinks />
 
@@ -19,9 +19,7 @@ const Header = () => {
         </div>
 
         <a href="/#contact" className='scroll__down'>Scroll Down</a>
-    
-
-       
+      
       </div>
     </header>
   )

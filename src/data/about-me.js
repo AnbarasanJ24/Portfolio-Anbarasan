@@ -6,7 +6,7 @@ export const aboutMe= [
         id: 1,
         icon : <FaAward className='about-icon' />,
         title : 'Experience',
-        description : '4 Years working on startup company'
+        description : '5 Years working on startup company'
     },
     {
         id: 2,

@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../../assets/Anbarasan-Frontend-Engineer-4YOE.pdf'
+import resume from '../../assets/Anbarasan_FullStack_Resume.pdf'
 
 const HeaderBtn = () => {
   return (
